@@ -1,15 +1,51 @@
 /* Write your CSS here */
 .eachTodo {
+  border: 1px solid #d9d9d9;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 575px) {
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-.button {
+.checkbox-title-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.todo-title-inputbar {
+  outline: none;
+  font-size: 17px;
+  width: 100%;
+
+  @media (max-width: 575px) {
+    width: 95%;
+  }
+}
+
+.todo-btns-container {
+  display: flex;
+  align-items: center;
+}
+
+.todo-btns {
   color: #ff0b37;
   background-color: transparent;
   border: 1px solid #ff0b37;
   border-radius: 3px;
-  padding: 8px;
   cursor: pointer;
+  padding: 4px 10px;
+  margin: 0 0 0 10px;
+
+  @media (max-width: 575px) {
+    margin: 5px 5px 0px 0px;
+  }
 }
